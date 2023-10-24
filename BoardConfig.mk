@@ -97,10 +97,28 @@ PLATFORM_SECURITY_PATCH := 2099-12-31
 VENDOR_SECURITY_PATCH := 2099-12-31
 PLATFORM_VERSION := 16.1.0
 
-# TWRP Configuration
-TW_THEME := portrait_hdpi
-TW_EXTRA_LANGUAGES := true
-TW_SCREEN_BLANK_ON_BOOT := true
-TW_INPUT_BLACKLIST := "hbtp_vm"
-TW_USE_TOOLBOX := true
-TW_INCLUDE_REPACKTOOLS := true
+# TWRP-Specific configuration 
+ TW_THEME := portrait_hdpi 
+ TW_DEVICE_VERSION := İnfinix Note 30 VİP
+ RECOVERY_SDCARD_ON_DATA := true 
+ TARGET_USES_MKE2FS := true 
+ TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness" 
+ TW_DEFAULT_BRIGHTNESS := 2024 
+ TW_MAX_BRIGHTNESS := 4048 
+ TW_Y_OFFSET := 80 
+ TW_H_OFFSET := -80 
+ TW_EXCLUDE_DEFAULT_USB_INIT := true 
+ TW_EXCLUDE_PYTHON := true 
+ TW_EXCLUDE_NANO := true 
+ TW_EXCLUDE_TWRPAPP := true 
+ TW_EXTRA_LANGUAGES := true 
+ TW_INCLUDE_NTFS_3G := true 
+ TW_NO_SCREEN_BLANK := true 
+ TW_SCREEN_BLANK_ON_BOOT := true 
+ TW_INCLUDE_RESETPROP := true 
+ TW_INCLUDE_REPACKTOOLS := true 
+ TW_HAS_MTP := true 
+  
+ # Debug 
+ TWRP_INCLUDE_LOGCAT := true 
+ TARGET_USES_LOGD := true
