@@ -12,14 +12,6 @@ ALLOW_MISSING_DEPENDENCIES := true
 
 # A/B
 AB_OTA_UPDATER := true
-AB_OTA_PARTITIONS += \
-    system \
-    vendor \
-    product \
-    system_ext \
-    boot \
-    vbmeta_vendor \
-    vbmeta_system
 
 # Architecture
 TARGET_ARCH := arm64
