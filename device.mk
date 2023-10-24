@@ -22,6 +22,18 @@ AB_OTA_POSTINSTALL_CONFIG += \
     FILESYSTEM_TYPE_system=ext4 \
     POSTINSTALL_OPTIONAL_system=true
 
+# Dynamic partitions 
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
+# VNDK
+PRODUCT_TARGET_VNDK_VERSION := 32
+
+# API
+PRODUCT_SHIPPING_API_LEVEL := 32
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.build.security_patch=2099-12-31
+
 # MTK PlPath Utils
 PRODUCT_PACKAGES += \
     mtk_plpath_utils.recovery
