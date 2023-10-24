@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_Infinix-X6710.mk
+    $(LOCAL_DIR)/twrp_Infinix-X6710.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_Infinix-X6710-user \
-    omni_Infinix-X6710-userdebug \
-    omni_Infinix-X6710-eng
+    twrp_Infinix-X6710-user \
+    twrp_Infinix-X6710-userdebug \
+    twrp_Infinix-X6710-eng
